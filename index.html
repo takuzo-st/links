@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>おすすめサービス</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f9f9f7;
+    color: #1a1a1a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 20px 80px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .name {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    color: #888;
+    margin-bottom: 10px;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: #1a1a1a;
+  }
+
+  .divider {
+    width: 32px;
+    height: 1px;
+    background: #ccc;
+    margin: 20px auto;
+  }
+
+  .desc {
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 0.08em;
+    line-height: 1.8;
+  }
+
+  .list {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 22px;
+    background: #fff;
+    border: 1px solid #e8e8e4;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .card:hover {
+    border-color: #bbb;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  .icon {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f0;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .card-body { flex: 1; }
+
+  .card-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    color: #bbb;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .card-name {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+
+  .card-note {
+    font-size: 11px;
+    color: #aaa;
+    letter-spacing: 0.03em;
+  }
+
+  .arrow {
+    color: #ccc;
+    font-size: 14px;
+    transition: color 0.2s, transform 0.2s;
+  }
+
+  .card:hover .arrow {
+    color: #666;
+    transform: translateX(3px);
+  }
+
+  footer {
+    margin-top: 56px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 10px;
+    color: #bbb;
+    letter-spacing: 0.08em;
+    line-height: 2;
+  }
+</style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="name">Investment · Economy</div>
+    <h1 class="title">おすすめサービス</h1>
+    <div class="divider"></div>
+    <p class="desc">経済ニュースを発信する立場から<br>実際に役立つサービスを紹介しています</p>
+  </header>
+
+  <div class="list">
+
+    <a class="card" href="https://px.a8.net/svt/ejp?a8mat=4B3U73+BRB7W2+3XCC+6KU8I" rel="nofollow" target="_blank">
+      <div class="icon">📈</div>
+      <div class="card-body">
+        <div class="card-label">Securities</div>
+        <div class="card-name">松井証券</div>
+        <div class="card-note">老舗ネット証券 ・ 口座開設無料</div>
+      </div>
+      <div class="arrow">→</div>
+    </a>
+
+    <!-- 案件追加時はここにコピペ
+    <a class="card" href="リンクURL" rel="nofollow" target="_blank">
+      <div class="icon">🏢</div>
+      <div class="card-body">
+        <div class="card-label">カテゴリ名（英語）</div>
+        <div class="card-name">サービス名</div>
+        <div class="card-note">説明文</div>
+      </div>
+      <div class="arrow">→</div>
+    </a>
+    -->
+
+  </div>
+
+  <footer>
+    <p>※本ページはアフィリエイトリンクを含みます<br>※投資は自己責任でお願いします</p>
+  </footer>
+
+</body>
+</html>
